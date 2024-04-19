@@ -1,0 +1,31 @@
+Ques:- Explain the purpose of using the var() function in css. Also you have created two buttons with id named
+primaryBtn and secondaryBtn which should be given background colors using the var() function. The color
+code for primaryColor is #00b7ff and secondaryColor is #6c757d.
+
+Ans :- CSS variables have access to the DOM, which means that you can create variables with local or global scope.
+ A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the
+ same colors over and over again, you can place them in variables.
+
+Syntax of the var() Function
+
+The var() function is used to insert the value of a CSS variable.
+
+Syntax: var(--name, value)
+
+To declare a variable in plain CSS, place two hyphens in front of the custom name you choose for the variable, 
+or property, then use the var() function to place that value wherever you desire:
+
+How the var() function Works
+
+    1. First of all: CSS variables can have a global or local scope.
+    2. Global variables can be accessed/used throughout the entire document, while local variables can be used
+        only inside the selector where it is declared.
+    3. To create a variable with global scope, declare it inside the: root selector. The :root selector matches
+       the document's root element.
+    4. To create a variable with local scope, declare it inside the selector that is going to use it.
+
+Advantages of using var()
+
+   1. makes the code easier to read (more understandable)
+   2.  makes it much easier to change the color values
+
